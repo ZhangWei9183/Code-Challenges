@@ -1,0 +1,26 @@
+header>h1 {
+    text-align: center;
+}
+
+main {
+    width: 60%;
+    min-width: 310px;
+    box-shadow: 1px 1px 1px 1px whitesmoke, -1px -1px 1px 1px whitesmoke;
+    margin: 20px auto;
+    padding: 10px 5px;
+    text-align: center;
+    background: whitesmoke;
+}
+
+#inputPara {
+    display: block;
+    width: 80%;
+    line-height: 20px;
+    margin: 0 auto;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
