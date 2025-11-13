@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Position Tracker using mousemove event</title>
+
+</head>
+<body>
+  <div id="tracker">X: 0, Y: 0</div>
+  <h1>Move your mouse to see the coordinates</h1>
+
+  <script>
+    // your code goes here.
+    const tracker = document.getElementById('tracker')
+    document.addEventListener('mousemove',(event)=> {
+        const x = event.clientX
+        const y = event.clientY
+        
+        tracker.textContent = `X: ${x}, Y: ${y}`
+    })
+  </script>
+</body>
+</html>
