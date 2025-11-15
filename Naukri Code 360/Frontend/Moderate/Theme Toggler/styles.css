@@ -1,0 +1,61 @@
+section {
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: hsl(551611, 30%, 90%);
+}
+
+
+.toggle-btn-container {
+    background-color: orange;
+    border-radius: 10px;
+    padding: 5px;
+    width: fit-content;
+}
+
+.btn {
+    position: relative;
+    border-radius: 10px;
+    border: 0;
+    width: 120px;
+    height: 80px;
+}
+
+
+#dark-mode-btn {
+    background-color: black;
+    color: white;
+}
+
+#light-mode-btn {
+    background-color: rgb(241, 215, 184)
+}
+
+
+.light-mode,
+.dark-mode {
+    background-color: orange;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: 0.5s;
+}
+
+
+.hide {
+    width: 100%;
+}
+
+
+.dark-section {
+    background-color: hsl(0, 0%, 10%);
+}
