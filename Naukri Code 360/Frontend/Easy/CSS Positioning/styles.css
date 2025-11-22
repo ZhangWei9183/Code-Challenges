@@ -1,0 +1,40 @@
+.container {
+    border : 2px solid black;
+    padding : 1rem;
+    max-width : 30rem;
+    margin:  20% auto;
+    background-color: black;
+    color : white;
+    position: relative;
+}
+
+
+.container .box {
+    font-weight: bold;
+    border : 2px solid black;
+    padding :1.5rem;
+    background: white;
+    color : black;
+    max-width: 10rem;
+    text-align: center;
+}
+
+
+.container  p {
+    font-size : 1.5rem;
+    font-style: oblique;
+    line-height: 1.5;
+    text-align: right;
+}
+
+
+.container h2 {
+    letter-spacing: 0.3rem;
+}
+
+
+.box {
+    position: absolute;
+    top: -30px;
+    right: 50px;
+}
