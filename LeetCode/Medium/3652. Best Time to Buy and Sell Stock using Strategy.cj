@@ -11,11 +11,11 @@ class Solution
     : Int64
     {
         let n = prices.size
-        var i = 0;
-        var j = k / 2;
-        var o = k;
-        var sum = 0;
-        var diff = 0;
+        var i = 0
+        var j = k / 2
+        var o = k
+        var sum = 0
+        var diff = 0
 
 
         while
@@ -23,10 +23,10 @@ class Solution
             i < j
         )
         {
-            sum += prices[i] * strategy[i];
-            diff += prices[i] * -strategy[i];
+            sum += prices[i] * strategy[i]
+            diff += prices[i] * -strategy[i]
 
-            i ++;
+            i ++
         }
 
 
@@ -35,15 +35,15 @@ class Solution
             i < o
         )
         {
-            sum += prices[i] * strategy[i];
-            diff += prices[i] * ( 1 - strategy[i] );
+            sum += prices[i] * strategy[i]
+            diff += prices[i] * ( 1 - strategy[i] )
 
-            i ++;
+            i ++
         }
 
 
-        var ans = diff;
-        i = 0;
+        var ans = diff
+        i = 0
 
 
         while
@@ -51,17 +51,17 @@ class Solution
             o < n
         )
         {
-            sum += prices[o] * strategy[k];
-            diff += ( prices[o] * ( 1 - strategy[o] ) ) - prices[j] + ( prices[i] * strategy[i] );
-            ans = max( ans, diff );
+            sum += prices[o] * strategy[k]
+            diff += ( prices[o] * ( 1 - strategy[o] ) ) - prices[j] + ( prices[i] * strategy[i] )
+            ans = max( ans, diff )
 
-            i ++;
-            j ++;
-            o ++;
+            i ++
+            j ++
+            o ++
         }
 
 
-        ans = max( ans + sum,  sum );
+        max( ans + sum, sum )
     }
 
 }
