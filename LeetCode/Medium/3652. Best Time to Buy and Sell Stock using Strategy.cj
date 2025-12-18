@@ -51,7 +51,7 @@ class Solution
             o < n
         )
         {
-            sum += prices[o] * strategy[k]
+            sum += prices[o] * strategy[o]
             diff += ( prices[o] * ( 1 - strategy[o] ) ) - prices[j] + ( prices[i] * strategy[i] )
             ans = max( ans, diff )
 
