@@ -7,7 +7,7 @@ class Solution
         nums: Array < Int64 >
     ): Int64
     {
-        let hashSet = new HashSet < Int64 > ();
+        let hashSet = HashSet < Int64 > ()
 
 
         for
@@ -26,13 +26,13 @@ class Solution
             }
             else
             {
-                hashset.add( num );
+                hashSet.add( num )
             }
 
         }
 
 
-        return nums[0];
+        return nums[0]
     }
 
 }
